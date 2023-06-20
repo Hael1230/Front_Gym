@@ -35,6 +35,10 @@
                             <input type="email" class="form-control" name="email">
                         </div>
                         <div class="mb-4">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="name" class="form-control" name="namel">
+                        </div>
+                        <div class="mb-4">
                             <label for="new_contraseña" class="form-label">Nueva Contraseña</label>
                             <input type="new_contraseña" class="form-control" name="new_contraseña">
                         </div>
@@ -43,7 +47,11 @@
                             <input type="con_contraseña" class="form-control" name="con_contraseña">
                         </div>
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-dark">Iniciar Sesión</button>
+                            <button type="submit" class="btn btn-dark" onclick="window.modal.showModal();">Confirmar</button>
+                            <dialog id="modal">
+                                <h2>Se a Confirmado la nueva contraseña</h2>
+                                <button onclick="window.modal.close();" class="btn btn-dark"><a href="../src/Login.html">Confirmar</a></button>
+                             </dialog>
                         </div>
                     </form>
             </div>
