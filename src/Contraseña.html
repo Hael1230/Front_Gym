@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Contraseña</title>
+        <link href="../css/style.css" rel="stylesheet">
+        <style>
+            .bg{
+                background-image: url(../img/Fondo.jpg);
+                background-position: center center;
+                background-size:cover;
+                background-repeat: no-repeat;
+            }
+            .bg1{
+                background-image: url(../img/fondo2.jpg);
+                background-position: center center;
+                background-size:cover;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body class="bg">
+        <div class="container w-75 bg-white bg-opacity-75 mt-5 rounded shadow">
+            <div class="row align-items-stretch">
+                <div class="col">
+                    <div class="text-end">
+                        <img src="../img/logo.png" alt="" width="48">
+                    </div>
+                    <h2 class="fw-bold text-center py-5">Contraseña</h2>
+
+                    <form action="#">
+                        <div class="mb-4">
+                            <label for="email" class="form-label">Correo electronico</label>
+                            <input type="email" class="form-control" name="email">
+                        </div>
+                        <div class="mb-4">
+                            <label for="new_contraseña" class="form-label">Nueva Contraseña</label>
+                            <input type="new_contraseña" class="form-control" name="new_contraseña">
+                        </div>
+                        <div class="mb-4">
+                            <label for="con_contraseña" class="form-label">Corfirmar Contraseña</label>
+                            <input type="con_contraseña" class="form-control" name="con_contraseña">
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-dark">Iniciar Sesión</button>
+                        </div>
+                    </form>
+            </div>
+        </div>
+
+        <script src="bootstrap.bundle.min.js"></script>
+    </body>
+</html>
